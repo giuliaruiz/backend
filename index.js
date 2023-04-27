@@ -18,7 +18,7 @@ app.listen(PORT, () => {
     console.log(`Server Started at ${PORT}`)
 })
 
-var mongoURL = "mongodb+srv://giulia216080:giulia01@cluster0.aqhcpp7.mongodb.net/test"
+var mongoURL = "mongodb+srv://giulia216080:giulia01@cluster0.aqhcpp7.mongodb.net/tarefas"
 //Configurando a conexao com o Banco de Dados
 var mongoose = require('mongoose');
 mongoose.connect(mongoURL, {
