@@ -17,9 +17,8 @@ app.use('/api', routes);
 app.listen(PORT, () => {
     console.log(`Server Started at ${PORT}`)
 })
-// Obtendo os parametros passados pela linha de comando
-var userArgs = process.argv.slice(2);
-var mongoURL = userArgs[0];
+
+var mongoURL = "mongodb+srv://giulia216080:<password>@cluster0.aqhcpp7.mongodb.net/test"
 //Configurando a conexao com o Banco de Dados
 var mongoose = require('mongoose');
 mongoose.connect(mongoURL, {
